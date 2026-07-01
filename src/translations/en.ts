@@ -126,6 +126,13 @@ export const en = {
         tech: ['React Native', 'TypeScript', 'Python', 'FastAPI', 'OpenAI GPT', 'Google STT/TTS', 'FFmpeg'],
         github: 'https://github.com/Nozomu05/voice-in-voice-out-AI-chatbot-app',
       },
+      {
+        title: 'Web Crawler',
+        description:
+          'A Node.js web crawler that scrapes and converts web pages into clean Markdown. Uses Cheerio for HTML parsing, Turndown for Markdown conversion, and concurrency-limited requests with automatic retries.',
+        tech: ['Node.js', 'Express', 'Cheerio', 'Axios', 'Turndown', 'p-limit'],
+        github: 'https://github.com/Nozomu05/webcrawler',
+      },
     ],
   },
   contact: {
