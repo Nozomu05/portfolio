@@ -115,9 +115,9 @@ export const en = {
       {
         title: 'LLMQwen — RAG Chatbot',
         description:
-          'A production-grade RAG chatbot built from scratch on Qwen3-8B-Instruct-AWQ. Features multilingual support, HyDE retrieval, CrossEncoder reranking, and real-time streaming via SSE.',
-        tech: ['Python', 'FastAPI', 'vLLM', 'LangChain', 'ChromaDB', 'Qwen3', 'sentence-transformers'],
-        github: 'https://github.com/Nozomu05/LLMQwen',
+          'A locally-hosted RAG chatbot built on Qwen3-14B-AWQ. Upload PDFs, Word, PowerPoint and more, then ask questions with vector retrieval, reranking, and real-time word-by-word streaming — all running on-device with no cloud connectivity.',
+        tech: ['Python', 'vLLM', 'Qwen3-14B-AWQ', 'Docker', 'Hugging Face', 'CUDA'],
+        github: 'https://github.com/Nozomu05/chatbot',
       },
       {
         title: 'Voice-in Voice-out AI Chatbot',

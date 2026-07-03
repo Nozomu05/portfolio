@@ -117,9 +117,9 @@ export const fr: Translations = {
       {
         title: 'LLMQwen — Chatbot RAG',
         description:
-          'Un chatbot RAG de niveau production construit de zéro avec Qwen3-8B-Instruct-AWQ. Supporte le multilingue, la récupération HyDE, le reranking CrossEncoder et le streaming SSE en temps réel.',
-        tech: ['Python', 'FastAPI', 'vLLM', 'LangChain', 'ChromaDB', 'Qwen3', 'sentence-transformers'],
-        github: 'https://github.com/Nozomu05/LLMQwen',
+          "Un chatbot RAG hébergé localement, construit avec Qwen3-14B-AWQ. Importez des PDF, Word, PowerPoint et plus, puis posez vos questions grâce à la récupération vectorielle, au reranking et au streaming mot-par-mot en temps réel — le tout en local, sans connexion au cloud.",
+        tech: ['Python', 'vLLM', 'Qwen3-14B-AWQ', 'Docker', 'Hugging Face', 'CUDA'],
+        github: 'https://github.com/Nozomu05/chatbot',
       },
       {
         title: 'Chatbot IA Voix-Entrée Voix-Sortie',
