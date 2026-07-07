@@ -115,8 +115,8 @@ export const en = {
       {
         title: 'LLMQwen — RAG Chatbot',
         description:
-          'A locally-hosted RAG chatbot built on Qwen3-14B-AWQ. Upload PDFs, Word, PowerPoint and more, then ask questions with vector retrieval, reranking, and real-time word-by-word streaming — all running on-device with no cloud connectivity.',
-        tech: ['Python', 'vLLM', 'Qwen3-14B-AWQ', 'Docker', 'Hugging Face', 'CUDA'],
+          'A locally-hosted multi-agent RAG chatbot built on Qwen3-14B-AWQ. Persona-based agents each get isolated document access across PDFs, Word, PowerPoint and more, with cross-encoder reranking, optional live web search via SearXNG, and word-by-word streaming with source citations.',
+        tech: ['Python', 'FastAPI', 'vLLM', 'Qwen3-14B-AWQ', 'SearXNG', 'SQLite', 'Docker', 'Hugging Face'],
         github: 'https://github.com/Nozomu05/chatbot',
       },
       {
