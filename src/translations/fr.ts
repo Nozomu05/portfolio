@@ -131,8 +131,8 @@ export const fr: Translations = {
       {
         title: 'Web Crawler',
         description:
-          "Un crawler web en Node.js qui extrait et convertit des pages web en Markdown propre. Utilise Cheerio pour le parsing HTML, Turndown pour la conversion Markdown, avec des requêtes limitées en concurrence et des relances automatiques.",
-        tech: ['Node.js', 'Express', 'Cheerio', 'Axios', 'Turndown', 'p-limit'],
+          "Un crawler web full-stack qui transforme des sites entiers en Markdown propre et structuré pour des pipelines chatbot et RAG. Un microservice Python/FastAPI restitue les pages riches en JavaScript via crawl4ai et Playwright, tandis que le service Node.js gère le parcours en largeur, le filtrage des doublons et la conversion Markdown, le tout piloté depuis une interface web en temps réel.",
+        tech: ['Node.js', 'Express', 'Python', 'FastAPI', 'crawl4ai', 'Playwright', 'Cheerio', 'Turndown', 'p-limit'],
         github: 'https://github.com/Nozomu05/webcrawler',
       },
     ],

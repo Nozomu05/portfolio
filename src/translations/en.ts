@@ -129,8 +129,8 @@ export const en = {
       {
         title: 'Web Crawler',
         description:
-          'A Node.js web crawler that scrapes and converts web pages into clean Markdown. Uses Cheerio for HTML parsing, Turndown for Markdown conversion, and concurrency-limited requests with automatic retries.',
-        tech: ['Node.js', 'Express', 'Cheerio', 'Axios', 'Turndown', 'p-limit'],
+          'A full-stack web crawler that turns entire websites into clean, structured Markdown for chatbot and RAG pipelines. A Python/FastAPI microservice renders JavaScript-heavy pages via crawl4ai and Playwright, while the Node.js service handles breadth-first crawling, dedup filtering, and Markdown conversion, all driven from a real-time web UI with live progress.',
+        tech: ['Node.js', 'Express', 'Python', 'FastAPI', 'crawl4ai', 'Playwright', 'Cheerio', 'Turndown', 'p-limit'],
         github: 'https://github.com/Nozomu05/webcrawler',
       },
     ],
