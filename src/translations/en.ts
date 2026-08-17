@@ -111,6 +111,7 @@ export const en = {
     title: 'Projects',
     subtitle: 'Things I have built.',
     view_github: 'View on GitHub',
+    view_demo: 'Live Demo',
     items: [
       {
         title: 'LLMQwen — RAG Chatbot',
@@ -118,6 +119,7 @@ export const en = {
           'A locally-hosted multi-agent RAG chatbot built on Qwen3-14B-AWQ. Persona-based agents each get isolated document access across PDFs, Word, PowerPoint and more, with cross-encoder reranking, optional live web search via SearXNG, and word-by-word streaming with source citations.',
         tech: ['Python', 'FastAPI', 'vLLM', 'Qwen3-14B-AWQ', 'SearXNG', 'SQLite', 'Docker', 'Hugging Face'],
         github: 'https://github.com/Nozomu05/chatbot',
+        demo: '',
       },
       {
         title: 'Voice-in Voice-out AI Chatbot',
@@ -125,6 +127,7 @@ export const en = {
           'A mobile AI assistant enabling natural voice conversations on iOS and Android. Features real-time speech recognition powered by Google STT, GPT-driven responses, and TTS output.',
         tech: ['React Native', 'TypeScript', 'Python', 'FastAPI', 'OpenAI GPT', 'Google STT/TTS', 'FFmpeg'],
         github: 'https://github.com/Nozomu05/voice-in-voice-out-AI-chatbot-app',
+        demo: '',
       },
       {
         title: 'Web Crawler',
@@ -132,6 +135,7 @@ export const en = {
           'A full-stack web crawler that turns entire websites into clean, structured Markdown for chatbot and RAG pipelines. A Python/FastAPI microservice renders JavaScript-heavy pages via crawl4ai and Playwright, while the Node.js service handles breadth-first crawling, dedup filtering, and Markdown conversion, all driven from a real-time web UI with live progress.',
         tech: ['Node.js', 'Express', 'Python', 'FastAPI', 'crawl4ai', 'Playwright', 'Cheerio', 'Turndown', 'p-limit'],
         github: 'https://github.com/Nozomu05/webcrawler',
+        demo: '',
       },
     ],
   },

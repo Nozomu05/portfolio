@@ -113,6 +113,7 @@ export const fr: Translations = {
     title: 'Projets',
     subtitle: "Ce que j'ai construit.",
     view_github: 'Voir sur GitHub',
+    view_demo: 'Démo en ligne',
     items: [
       {
         title: 'LLMQwen — Chatbot RAG',
@@ -120,6 +121,7 @@ export const fr: Translations = {
           "Un chatbot RAG multi-agents hébergé localement, construit avec Qwen3-14B-AWQ. Des agents à personas dédiés accèdent chacun à leurs propres documents (PDF, Word, PowerPoint et plus), avec reranking par cross-encoder, recherche web optionnelle via SearXNG, et streaming mot-par-mot avec citations des sources.",
         tech: ['Python', 'FastAPI', 'vLLM', 'Qwen3-14B-AWQ', 'SearXNG', 'SQLite', 'Docker', 'Hugging Face'],
         github: 'https://github.com/Nozomu05/chatbot',
+        demo: '',
       },
       {
         title: 'Chatbot IA Voix-Entrée Voix-Sortie',
@@ -127,6 +129,7 @@ export const fr: Translations = {
           "Un assistant IA mobile permettant des conversations vocales naturelles sur iOS et Android. Reconnaissance vocale en temps réel via Google STT, réponses GPT et synthèse vocale.",
         tech: ['React Native', 'TypeScript', 'Python', 'FastAPI', 'OpenAI GPT', 'Google STT/TTS', 'FFmpeg'],
         github: 'https://github.com/Nozomu05/voice-in-voice-out-AI-chatbot-app',
+        demo: '',
       },
       {
         title: 'Web Crawler',
@@ -134,6 +137,7 @@ export const fr: Translations = {
           "Un crawler web full-stack qui transforme des sites entiers en Markdown propre et structuré pour des pipelines chatbot et RAG. Un microservice Python/FastAPI restitue les pages riches en JavaScript via crawl4ai et Playwright, tandis que le service Node.js gère le parcours en largeur, le filtrage des doublons et la conversion Markdown, le tout piloté depuis une interface web en temps réel.",
         tech: ['Node.js', 'Express', 'Python', 'FastAPI', 'crawl4ai', 'Playwright', 'Cheerio', 'Turndown', 'p-limit'],
         github: 'https://github.com/Nozomu05/webcrawler',
+        demo: '',
       },
     ],
   },
