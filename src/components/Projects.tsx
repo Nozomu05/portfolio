@@ -31,7 +31,6 @@ export default function Projects() {
                 variants={fadeUp}
                 className="group relative bg-zinc-900/60 border border-zinc-800 rounded-2xl p-7 hover:border-cyan-400/40 transition-all duration-300 flex flex-col"
               >
-                {/* Header */}
                 <div className="flex items-start justify-between mb-4">
                   <div className="p-2.5 bg-zinc-800 rounded-xl">
                     <svg className="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">

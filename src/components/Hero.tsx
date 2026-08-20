@@ -16,7 +16,6 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20">
-      {/* Background */}
       <div
         className="absolute inset-0 opacity-25"
         style={{

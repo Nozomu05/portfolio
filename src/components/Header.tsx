@@ -9,7 +9,7 @@ export default function Header() {
   const { language, setLanguage, t } = useLanguage()
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const headerRef = useRef<HTMLElement>(null)
+  const topBarRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 30)
@@ -20,7 +20,7 @@ export default function Header() {
   const scrollTo = (id: string) => {
     const el = document.getElementById(id)
     if (el) {
-      const headerHeight = headerRef.current?.offsetHeight ?? 0
+      const headerHeight = topBarRef.current?.offsetHeight ?? 0
       const top = el.getBoundingClientRect().top + window.scrollY - headerHeight - 16
       window.scrollTo({ top, behavior: 'smooth' })
     }
@@ -38,12 +38,11 @@ export default function Header() {
 
   return (
     <header
-      ref={headerRef}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? 'bg-zinc-950/90 backdrop-blur-md border-b border-zinc-800/60' : ''
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div ref={topBarRef} className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="text-xl font-bold text-white hover:text-cyan-400 transition-colors font-mono"

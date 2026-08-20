@@ -25,7 +25,6 @@ export default function Experience() {
           </motion.div>
 
           <div className="relative">
-            {/* Vertical line */}
             <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-zinc-800" />
 
             <div className="space-y-10">
@@ -35,7 +34,6 @@ export default function Experience() {
                   variants={fadeUp}
                   className="relative pl-12 md:pl-16"
                 >
-                  {/* Dot */}
                   <div
                     className={`absolute left-2.5 md:left-4 top-6 w-3 h-3 rounded-full border-2 ${
                       exp.current
