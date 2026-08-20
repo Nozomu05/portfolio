@@ -18,13 +18,21 @@ export default function Header() {
   }, [])
 
   const scrollTo = (id: string) => {
-    const el = document.getElementById(id)
-    if (el) {
-      const headerHeight = topBarRef.current?.offsetHeight ?? 0
-      const top = el.getBoundingClientRect().top + window.scrollY - headerHeight - 16
-      window.scrollTo({ top, behavior: 'smooth' })
+    const performScroll = () => {
+      const el = document.getElementById(id)
+      if (el) {
+        const headerHeight = topBarRef.current?.offsetHeight ?? 0
+        const top = el.getBoundingClientRect().top + window.scrollY - headerHeight - 16
+        window.scrollTo({ top, behavior: 'smooth' })
+      }
     }
-    setMobileOpen(false)
+
+    if (mobileOpen) {
+      setMobileOpen(false)
+      setTimeout(performScroll, 250)
+    } else {
+      performScroll()
+    }
   }
 
   const navLabels: Record<NavId, string> = {
