@@ -101,6 +101,14 @@ export const fr: Translations = {
         detail: 'Spécialisation développement full stack pour applications web',
       },
       {
+        degree: 'Programme d\'échange — Web Page, Digital/Multimedia & Information Resources Design',
+        school: 'Asia Pacific University of Technology and Innovation (APU / APIIT)',
+        location: 'Kuala Lumpur, Malaisie',
+        period: 'Avr 2025 – Juin 2025',
+        detail:
+          "Programme d'échange durant lequel j'ai perfectionné mon anglais et appris à utiliser des outils de présentation importants ainsi que des outils de chatbot IA no-code (Botpress, Microsoft Power BI).",
+      },
+      {
         degree: 'Baccalauréat Français International',
         school: 'Lycée Français International Marguerite Duras',
         location: 'Hô Chi Minh-Ville, Vietnam',

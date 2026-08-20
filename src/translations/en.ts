@@ -99,6 +99,14 @@ export const en = {
         detail: 'Full stack web development specialisation',
       },
       {
+        degree: 'Exchange Program — Web Page, Digital/Multimedia & Information Resources Design',
+        school: 'Asia Pacific University of Technology and Innovation (APU / APIIT)',
+        location: 'Kuala Lumpur, Malaysia',
+        period: 'Apr 2025 – Jun 2025',
+        detail:
+          'Exchange program where I developed my English and learnt how to use important presentation tools as well as no-code AI chatbot tools (Botpress, Microsoft Power BI).',
+      },
+      {
         degree: 'French International Baccalaureate',
         school: 'Lycée Français International Marguerite Duras',
         location: 'Ho Chi Minh City, Vietnam',
