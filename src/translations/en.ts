@@ -33,7 +33,7 @@ export const en = {
     stats: [
       { value: '3+', label: 'Years of coding' },
       { value: '4', label: 'Professional roles' },
-      { value: '10+', label: 'Technologies' },
+      { value: '40+', label: 'Technologies' },
       { value: '2', label: 'Projects shipped' },
     ],
   },
@@ -43,6 +43,8 @@ export const en = {
     categories: {
       languages: 'Languages',
       frameworks: 'Frameworks & Libraries',
+      ai: 'AI & LLM',
+      databases: 'Databases',
       cloud: 'Cloud & DevOps',
       other: 'Other Tools',
     },

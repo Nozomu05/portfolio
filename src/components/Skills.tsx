@@ -3,14 +3,18 @@ import { useLanguage } from '../context/LanguageContext'
 
 const skills = {
   languages: ['Python', 'TypeScript', 'JavaScript', 'Java', 'PHP', 'SQL', 'NoSQL', 'Bash', 'HTML', 'CSS'],
-  frameworks: ['React.js', 'Next.js', 'Vue.js', 'Angular', 'FastAPI', 'LangChain'],
+  frameworks: ['React.js', 'React Native', 'Next.js', 'Vue.js', 'Angular', 'Tailwind CSS', 'Node.js', 'Express', 'FastAPI'],
+  ai: ['LangChain', 'vLLM', 'Ollama', 'Hugging Face', 'OpenAI API', 'Google STT/TTS', 'Copilot Studio', 'Botpress'],
+  databases: ['PostgreSQL', 'SQLite', 'ChromaDB', 'Drizzle ORM'],
   cloud: ['Azure', 'Docker', 'Kubernetes', 'CI/CD'],
-  other: ['PowerBI', 'Botpress', 'Copilot Studio', 'Power Automate', 'Burp Suite', 'vLLM', 'ChromaDB'],
+  other: ['PowerBI', 'Power Automate', 'Burp Suite', 'Playwright', 'crawl4ai', 'SearXNG', 'FFmpeg'],
 }
 
 const categoryColors: Record<keyof typeof skills, string> = {
   languages: 'text-cyan-400 border-cyan-400/30 bg-cyan-400/5',
   frameworks: 'text-violet-400 border-violet-400/30 bg-violet-400/5',
+  ai: 'text-pink-400 border-pink-400/30 bg-pink-400/5',
+  databases: 'text-emerald-400 border-emerald-400/30 bg-emerald-400/5',
   cloud: 'text-blue-400 border-blue-400/30 bg-blue-400/5',
   other: 'text-amber-400 border-amber-400/30 bg-amber-400/5',
 }
@@ -18,6 +22,8 @@ const categoryColors: Record<keyof typeof skills, string> = {
 const headerColors: Record<keyof typeof skills, string> = {
   languages: 'text-cyan-400',
   frameworks: 'text-violet-400',
+  ai: 'text-pink-400',
+  databases: 'text-emerald-400',
   cloud: 'text-blue-400',
   other: 'text-amber-400',
 }
