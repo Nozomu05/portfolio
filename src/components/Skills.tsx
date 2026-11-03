@@ -2,12 +2,14 @@ import { motion } from 'framer-motion'
 import { useLanguage } from '../context/LanguageContext'
 
 const skills = {
-  languages: ['Python', 'TypeScript', 'JavaScript', 'Java', 'PHP', 'SQL', 'NoSQL', 'Bash', 'HTML', 'CSS'],
-  frameworks: ['React.js', 'React Native', 'Next.js', 'Vue.js', 'Angular', 'Tailwind CSS', 'Node.js', 'Express', 'FastAPI'],
-  ai: ['LangChain', 'vLLM', 'Ollama', 'Hugging Face', 'OpenAI API', 'Google STT/TTS', 'Copilot Studio', 'Botpress'],
-  databases: ['PostgreSQL', 'SQLite', 'ChromaDB', 'Drizzle ORM'],
-  cloud: ['Azure', 'Docker', 'Kubernetes', 'CI/CD'],
-  other: ['PowerBI', 'Power Automate', 'Burp Suite', 'Playwright', 'crawl4ai', 'SearXNG', 'FFmpeg'],
+  languages: ['Python', 'TypeScript', 'JavaScript', 'Java', 'Kotlin', 'PHP', 'SQL', 'NoSQL', 'Bash', 'HTML', 'CSS'],
+  frameworks: ['React.js', 'React Native', 'Next.js', 'Vue.js', 'Angular', 'Symfony', 'Tailwind CSS', 'Node.js', 'Express', 'FastAPI', 'Vite', 'Framer Motion', 'Cheerio'],
+  ai: ['RAG', 'Multi-agent systems', 'NLP', 'Multilingual NLP', 'Semantic Search', 'Transformer Models', 'Prompt Engineering', 'PyTorch', 'CUDA', 'LangChain', 'Hugging Face', 'vLLM', 'Ollama', 'OpenAI API', 'Claude', 'RAGAS', 'Google STT/TTS', 'Copilot Studio', 'Botpress'],
+  databases: ['PostgreSQL', 'MySQL', 'MongoDB', 'SQLite', 'ChromaDB', 'Drizzle ORM', 'phpMyAdmin'],
+  cloud: ['Azure', 'Docker', 'Kubernetes', 'CI/CD', 'Nginx', 'Linux', 'VirtualBox', 'Git', 'GitHub'],
+  architecture: ['REST APIs', 'Microservices', 'MVC', 'Reverse Proxy'],
+  security: ['Burp Suite', 'Penetration Testing', 'Web Application Testing'],
+  other: ['Power BI', 'Power Automate', 'Playwright', 'crawl4ai', 'SearXNG', 'FFmpeg'],
 }
 
 const categoryColors: Record<keyof typeof skills, string> = {
@@ -16,6 +18,8 @@ const categoryColors: Record<keyof typeof skills, string> = {
   ai: 'text-pink-400 border-pink-400/30 bg-pink-400/5',
   databases: 'text-emerald-400 border-emerald-400/30 bg-emerald-400/5',
   cloud: 'text-blue-400 border-blue-400/30 bg-blue-400/5',
+  architecture: 'text-orange-400 border-orange-400/30 bg-orange-400/5',
+  security: 'text-red-400 border-red-400/30 bg-red-400/5',
   other: 'text-amber-400 border-amber-400/30 bg-amber-400/5',
 }
 
@@ -25,6 +29,8 @@ const headerColors: Record<keyof typeof skills, string> = {
   ai: 'text-pink-400',
   databases: 'text-emerald-400',
   cloud: 'text-blue-400',
+  architecture: 'text-orange-400',
+  security: 'text-red-400',
   other: 'text-amber-400',
 }
 

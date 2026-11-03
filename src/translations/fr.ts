@@ -35,7 +35,7 @@ export const fr: Translations = {
     stats: [
       { value: '3+', label: "Années de code" },
       { value: '4', label: 'Postes professionnels' },
-      { value: '40+', label: 'Technologies' },
+      { value: '70+', label: 'Technologies' },
       { value: '2', label: 'Projets livrés' },
     ],
   },
@@ -48,6 +48,8 @@ export const fr: Translations = {
       ai: 'IA & LLM',
       databases: 'Bases de données',
       cloud: 'Cloud & DevOps',
+      architecture: 'Architecture & API',
+      security: 'Sécurité',
       other: 'Autres outils',
     },
   },
