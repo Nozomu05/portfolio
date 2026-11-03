@@ -84,7 +84,7 @@ export default function Hero() {
               </svg>
             </a>
             <a
-              href="https://www.linkedin.com/in/minh-hoang-anh-tran-922643359"
+              href="https://www.linkedin.com/in/minh-hoang-anh-tran"
               target="_blank"
               rel="noopener noreferrer"
               className="text-zinc-500 hover:text-white transition-colors duration-200"
