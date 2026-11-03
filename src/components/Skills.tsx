@@ -5,7 +5,7 @@ const skills = {
   languages: ['Python', 'TypeScript', 'JavaScript', 'Java', 'PHP', 'SQL', 'NoSQL', 'Bash', 'HTML', 'CSS'],
   frameworks: ['React.js', 'Next.js', 'Vue.js', 'Angular', 'FastAPI', 'LangChain'],
   cloud: ['Azure', 'Docker', 'Kubernetes', 'CI/CD'],
-  other: ['PowerBI', 'Botpress', 'Burp Suite', 'vLLM', 'ChromaDB'],
+  other: ['PowerBI', 'Botpress', 'Copilot Studio', 'Power Automate', 'Burp Suite', 'vLLM', 'ChromaDB'],
 }
 
 const categoryColors: Record<keyof typeof skills, string> = {

@@ -60,7 +60,7 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact" className="py-28" style={{ background: '#0d0d10' }}>
+    <section id="contact" className="py-28" style={{ background: '#09090b' }}>
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial="hidden"

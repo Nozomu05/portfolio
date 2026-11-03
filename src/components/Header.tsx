@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useLanguage } from '../context/LanguageContext'
 
-const NAV_IDS = ['about', 'skills', 'experience', 'education', 'projects', 'contact'] as const
+const NAV_IDS = ['about', 'skills', 'experience', 'education', 'certifications', 'projects', 'contact'] as const
 type NavId = typeof NAV_IDS[number]
 
 export default function Header() {
@@ -40,6 +40,7 @@ export default function Header() {
     skills: t.nav.skills,
     experience: t.nav.experience,
     education: t.nav.education,
+    certifications: t.nav.certifications,
     projects: t.nav.projects,
     contact: t.nav.contact,
   }
@@ -60,7 +61,7 @@ export default function Header() {
           <span className="text-cyan-400">/&gt;</span>
         </button>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-5 lg:gap-8">
           {NAV_IDS.map((id) => (
             <button
               key={id}

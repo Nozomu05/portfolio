@@ -10,7 +10,7 @@ export default function Projects() {
   const { t } = useLanguage()
 
   return (
-    <section id="projects" className="py-28" style={{ background: '#09090b' }}>
+    <section id="projects" className="py-28" style={{ background: '#0d0d10' }}>
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial="hidden"

@@ -4,6 +4,7 @@ export const en = {
     skills: 'Skills',
     experience: 'Experience',
     education: 'Education',
+    certifications: 'Certifications',
     projects: 'Projects',
     contact: 'Contact',
   },
@@ -12,7 +13,7 @@ export const en = {
     name: 'Tran Minh Hoang Anh',
     title: 'Full Stack Developer & AI Engineer',
     subtitle:
-      '3rd-year Engineering student at EFREI Paris, specialised in web development, AI solutions, and cybersecurity.',
+      'EFREI Paris graduate and AI Intern at FPT Software, specialised in web development, AI solutions, and cybersecurity.',
     cta_projects: 'View Projects',
     cta_contact: 'Get in Touch',
     scroll: 'scroll',
@@ -20,18 +21,18 @@ export const en = {
   about: {
     title: 'About Me',
     subtitle: 'Building at the intersection of web development and artificial intelligence.',
-    p1: "Currently in my 3rd year of Bachelor's in Engineering & Digital Technology at EFREI Paris, I have hands-on experience building web applications, conducting penetration tests, and developing production-ready AI solutions.",
+    p1: "A recent graduate of the Bachelor's in Engineering & Digital Technology at EFREI Paris and now an AI Intern at FPT Software, I have hands-on experience building web applications, conducting penetration tests, and developing production-ready AI solutions (LLMs, RAG, agents).",
     p2: "I'm passionate about emerging technologies and always looking for opportunities to apply my skills to innovative products that make a real impact.",
     languages_title: 'Spoken Languages',
     languages: [
       { lang: 'French', level: 'Fluent' },
       { lang: 'English', level: 'Fluent' },
-      { lang: 'Vietnamese', level: 'Native' },
+      { lang: 'Vietnamese', level: 'Fluent' },
       { lang: 'Spanish', level: 'Beginner' },
     ],
     stats: [
       { value: '3+', label: 'Years of coding' },
-      { value: '3', label: 'Professional roles' },
+      { value: '4', label: 'Professional roles' },
       { value: '10+', label: 'Technologies' },
       { value: '2', label: 'Projects shipped' },
     ],
@@ -52,11 +53,19 @@ export const en = {
     present: 'Present',
     items: [
       {
+        role: 'Artificial Intelligence Intern',
+        company: 'FPT Software',
+        location: 'Ho Chi Minh City, Vietnam',
+        period: 'Since Oct 2026',
+        current: true,
+        bullets: ['Building AI and automation solutions with Microsoft Copilot Studio and Power Automate'],
+      },
+      {
         role: 'Applied AI Engineer',
         company: 'ARTEMIS Research Department',
         location: 'Evry-Courcouronnes, Paris',
         period: 'Sep 2025 – Aug 2026',
-        current: true,
+        current: false,
         bullets: [
           'Comparative evaluation of LLM models based on R&D department resources',
           'Architecture design, model integration and conversation management',
@@ -115,6 +124,40 @@ export const en = {
       },
     ],
   },
+  certifications: {
+    title: 'Certifications',
+    subtitle: 'Licenses and certifications.',
+    issued: 'Issued',
+    expires: 'Expires',
+    credential_id: 'Credential ID',
+    view_credential: 'Show credential',
+    items: [
+      {
+        name: 'Claude Certified Associate — Foundations',
+        issuer: 'Anthropic',
+        issued: 'Oct 2026',
+        expires: 'Oct 2027',
+        credentialId: '',
+        url: 'https://www.credly.com/badges/bf63079c-8754-4175-9068-397586bcd601',
+      },
+      {
+        name: 'TOEIC Listening and Reading — 970/990',
+        issuer: 'ETS',
+        issued: 'Jul 2026',
+        expires: 'Jul 2028',
+        credentialId: '6879701452',
+        url: '',
+      },
+      {
+        name: 'IELTS Academic — Overall 8.0 (C1)',
+        issuer: 'British Council',
+        issued: 'Mar 2026',
+        expires: 'Mar 2028',
+        credentialId: '25FR005036TRAM585A',
+        url: '',
+      },
+    ],
+  },
   projects: {
     title: 'Projects',
     subtitle: 'Things I have built.',
@@ -122,11 +165,19 @@ export const en = {
     view_demo: 'Live Demo',
     items: [
       {
+        title: 'Wuwa Wiki — Wuthering Waves Database (In Progress)',
+        description:
+          "A fan-made database and build guide for Wuthering Waves, built from the game's own data files. Covers characters (skill multipliers at every level, resonance chains, material costs), weapons and echoes, with search and filtering, plus calculators for crit value, echo costs and damage. A TypeScript pipeline loads the game data into PostgreSQL, and a local LLM via Ollama suggests echo builds where no hand-curated pick exists.",
+        tech: ['TypeScript', 'Next.js', 'React', 'Tailwind CSS', 'PostgreSQL', 'Drizzle ORM', 'Docker', 'Ollama'],
+        github: 'https://github.com/Nozomu05/Wuthering-Waves-Website',
+        demo: '',
+      },
+      {
         title: 'LLMQwen — RAG Chatbot',
         description:
-          'A locally-hosted multi-agent RAG chatbot built on Qwen3-14B-AWQ. Persona-based agents each get isolated document access across PDFs, Word, PowerPoint and more, with cross-encoder reranking, optional live web search via SearXNG, and word-by-word streaming with source citations.',
-        tech: ['Python', 'FastAPI', 'vLLM', 'Qwen3-14B-AWQ', 'SearXNG', 'SQLite', 'Docker', 'Hugging Face'],
-        github: 'https://github.com/Nozomu05/chatbot',
+          'A locally-hosted multi-agent RAG chatbot built on Qwen3-14B-AWQ and served with vLLM on a single RTX 5090. Optimising the generation pipeline cut time-to-first-token from 45s to 7s. Persona-based agents each get isolated document access across PDFs, Word, PowerPoint and more, with HyDE retrieval, cross-encoder re-ranking, optional live web search via SearXNG, and real-time SSE streaming with source citations.',
+        tech: ['Python', 'FastAPI', 'LangChain', 'ChromaDB', 'vLLM', 'Qwen3-14B-AWQ', 'SearXNG', 'SQLite', 'Docker', 'Hugging Face'],
+        github: 'https://github.com/Nozomu05/LLMChatbot',
         demo: '',
       },
       {
